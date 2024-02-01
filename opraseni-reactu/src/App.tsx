@@ -10,6 +10,7 @@ function App() {
 			<Header />
             <div className="MB-container">
                 <DayList />
+                <MainTextBody />
             </div>
 		</div>
 	);
