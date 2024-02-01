@@ -1,3 +1,5 @@
+
+
 .mainBodyContainer {
     width: 90vw;
     height: 85vh;
@@ -8,4 +10,18 @@
 
     background: rgb(35, 35, 35);
     overflow-y: scroll;
+
+    transition-duration: 500ms;
+}
+
+.dayPost{
+width: 80%;
+height: 20vh;
+margin-top: 75px;
+padding: 20px;
+border-radius: 26px;
+background: linear-gradient(145deg, #292929, #303030);
+box-shadow:  6px 6px 26px #2c2c2c,
+             -6px -6px 26px #2e2e2e;
+
 }

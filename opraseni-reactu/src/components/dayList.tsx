@@ -4,8 +4,8 @@ import "./dayList.css";
 function DayList() {
 	const n = 30;
 	const count = Array.from({ length: n }, (_, index) => index + 1);
-	const listOfDays = count.map((number: number) => (
-		<a href={'"#Day"${number}'} className="dayListing">
+	const listOfDays = count.map((number: number, index:number) => (
+		<a href={'#Day'+(index+1)} className="dayListing">
 			{" "}
 			Day {number.toString()}
 		</a>

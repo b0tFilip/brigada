@@ -1,29 +1,24 @@
 import React from "react";
 import "./mainTextBody.css";
+import allTheDays from "./Days.json"
 
 function mainTextBody() {
-    var Days:string[];
-    fetch(text)
-        .then((r) => r.text())
-        .then((text) => {
-            Days = text.split('$$$');
-        });
-    const listOfDays = Days.map((dayText: string , index:number) => (
-        <a href={'"#Day"${ index }'} className="dayPost">
+    //   const text = require("./Days.txt");
+    
+    const Days = Object.values(allTheDays)
+    console.log(Days)
+    const listOfDays = Days.map((dayText: string, index: number) => (
+        <a id={"Day" + (index + 1)} className="dayPost">
             {" "}
-            Day {dayText}
+            {dayText}
         </a>
     ));
 
-
     return (
         <div className="mainBodyContainer">
-            
+            <ul>{listOfDays}</ul>
         </div>
-
     );
-
 }
-
 
 export default mainTextBody;
