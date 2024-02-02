@@ -15,14 +15,14 @@ function Header() {
             </div>
             <div className="linContainer">
                 <a href="/" className="headerLink">
-                    Home
+                    Domů
                 </a>
                 <a href="/AboutMe" className="headerLink">
-                    AboutMe
+                    O mně
                 </a>
                 <a href="/AboutProject" className="headerLink">
                     {" "}
-                    About this project
+                    O tomto projektu
                 </a>
             </div>
         </div>

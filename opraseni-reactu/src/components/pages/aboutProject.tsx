@@ -4,7 +4,20 @@ function AboutProject() {
     return (
         <div>
             <Header />
-            <p>About This project</p>
+            <div className="mainFieldContainer">
+                <div className="mainField">
+                    {" "}
+                    ¨
+                    <div className="topContainer">
+                        <h1> Něco o tomto projektu</h1>
+                    </div>
+                    <p className="textAboutMe">
+                        BLlah blah vlasclnlkvnasknva <br />
+                        aligngnbkjankv <br />
+                        lasdbnvkjbaks n <br />
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }

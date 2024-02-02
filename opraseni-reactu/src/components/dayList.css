@@ -10,33 +10,35 @@
     overflow-y: scroll;
 }
 
-
 .dayListContainer::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+    width: 12px;
+    /* width of the entire scrollbar */
 }
+
 .dayListContainer::-webkit-scrollbar-track {
-  background: rgb(55, 55, 55);        /* color of the tracking area */
+    background: rgb(55, 55, 55);
+    /* color of the tracking area */
 }
+
 .dayListContainer::-webkit-scrollbar-thumb {
-  background-color: rgb(45, 45, 45);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid rgb(65, 65, 65);  /* creates padding around scroll thumb */
+    background-color: rgb(45, 45, 45);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid rgb(65, 65, 65);
+    /* creates padding around scroll thumb */
 }
-
-
-
 
 ul {
     padding-left: 10%;
     width: 90%;
-    margin:0;
+    margin: 0;
     margin-bottom: 35%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 }
-
 
 .dayListing {
     display: flex;
@@ -48,8 +50,6 @@ ul {
         5px 5px 10px #262626,
         -5px -5px 10px #343434;
 
-
-
     margin-top: 15px;
     padding-left: 16%;
     vertical-align: middle;
@@ -57,5 +57,5 @@ ul {
     color: white;
     text-decoration: 0;
     font-weight: bold;
-    font-size: calc(130%);
+    font-size: calc(100%);
 }
