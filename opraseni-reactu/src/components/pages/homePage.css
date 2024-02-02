@@ -1,0 +1,12 @@
+html{scroll-behavior:smooth}
+
+body {
+    background: rgb(55, 55, 55);
+}
+
+.MB-container {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}

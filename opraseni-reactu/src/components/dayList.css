@@ -10,6 +10,22 @@
     overflow-y: scroll;
 }
 
+
+.dayListContainer::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.dayListContainer::-webkit-scrollbar-track {
+  background: rgb(55, 55, 55);        /* color of the tracking area */
+}
+.dayListContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(45, 45, 45);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(65, 65, 65);  /* creates padding around scroll thumb */
+}
+
+
+
+
 ul {
     padding-left: 10%;
     width: 90%;
@@ -20,6 +36,7 @@ ul {
     justify-content: start;
     align-items: start;
 }
+
 
 .dayListing {
     display: flex;

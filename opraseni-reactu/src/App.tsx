@@ -1,19 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./components/header";
-import DayList from "./components/dayList";
-import MainTextBody from "./components/mainTextBody";
+import HomePage from "./components/pages/homePage";
+import AboutProject from "./components/pages/aboutProject";
+import AboutMe from "./components/pages/aboutMe";
 function App() {
-	return (
-		<div className="App">
-			<Header />
-            <div className="MB-container">
-                <DayList />
-                <MainTextBody />
-            </div>
-		</div>
-	);
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/AboutMe" element={<AboutMe />}/>
+                <Route path="/AboutProject" element={<AboutProject />}/>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

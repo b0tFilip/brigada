@@ -2,7 +2,7 @@
     width: 100vw;
     height: 15vh;
 
-    background: rgb(45, 45, 45);
+    background: rgb(35, 35, 35);
     padding: 0;
 
     display: flex;
@@ -17,7 +17,7 @@
 
     font-size: calc(150%);
     font-weight: bold;
-    margin-top:2%;
+    margin-top: 2%;
 }
 
 .icon {
@@ -36,5 +36,19 @@
     justify-content: center;
 
     transform: translateX(calc(- 100px + 10%));
+}
 
+.linContainer {
+    display: flex;
+    width: 50%;
+    margin-left: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerLink {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
 }
