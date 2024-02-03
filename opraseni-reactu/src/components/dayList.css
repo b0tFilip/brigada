@@ -42,7 +42,7 @@ ul {
 
 .dayListing {
     display: flex;
-    width: 69%;
+    min-width: 69%;
     height: 5vh;
     border-radius: 9px;
     background: linear-gradient(145deg, #292929, #303030);
@@ -51,7 +51,8 @@ ul {
         -5px -5px 10px #343434;
 
     margin-top: 15px;
-    padding-left: 16%;
+    padding-left: 1vw;
+    padding-right: 1vw;
     vertical-align: middle;
     line-height: 5vh;
     color: white;

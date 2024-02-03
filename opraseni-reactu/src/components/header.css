@@ -15,7 +15,7 @@
     margin: 0;
     color: whitesmoke;
 
-    font-size: calc(250%);
+    font-size: calc(3vh);
     font-weight: bold;
     margin-top: 2%;
 }
@@ -38,20 +38,20 @@
     transform: translateX(calc(- 100px + 10%));
 }
 
-.linContainer {
+.linkContainer {
     display: flex;
     width: 50%;
     height: 100%;
-    margin-left: 30%;
-    justify-content: space-evenly;
+    margin-left: 15vw;
+    justify-content: space-around;
     align-items: center;
 }
 
 .headerLink {
     height: 30%;
-    width: 25%;
+    width: 15vw;
     color: darkgray;
-    font-size: calc(100%);
+    font-size: calc(1.5vh);
     font-weight: bold;
     text-decoration: none;
     background: whitesmoke;

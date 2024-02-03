@@ -13,7 +13,7 @@ function Header() {
                 <p className="pageName"> 30 dní </p>
                 <p className="pageName"> NOKIE </p>
             </div>
-            <div className="linContainer">
+            <div className="linkContainer">
                 <a href="/" className="headerLink">
                     Domů
                 </a>
@@ -22,7 +22,7 @@ function Header() {
                 </a>
                 <a href="/AboutProject" className="headerLink">
                     {" "}
-                    O tomto projektu
+                    O projektu
                 </a>
             </div>
         </div>
