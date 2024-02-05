@@ -43,7 +43,7 @@ function Introduction() {
             </form>
             <p style={{ color: "whitesmoke" }}>
                 {" "}
-                Your name is {firstName} {surname} and you are {age} years old
+                Jmenuješ se {firstName} {surname} a jsi starý {age}let
             </p>
         </div>
     );
