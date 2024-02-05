@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../header";
 import "./aboutMe.css";
+import Introduction from "../introduceYourself";
+
 function AboutMe() {
     return (
         <div>
@@ -22,6 +24,7 @@ function AboutMe() {
                         aligngnbkjankv <br />
                         lasdbnvkjbaks n <br />
                     </p>
+                    <Introduction />
                 </div>
             </div>
         </div>
