@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/pages/homePage";
 import AboutProject from "./components/pages/aboutProject";
 import AboutMe from "./components/pages/aboutMe";
+import Header from "./components/header";
+
 function App() {
+    const [page, updatePage] = useState(<HomePage />)
+
+    function handleUpdatePage(opt:number) {
+        if (opt == 1)
+           updatePage(<HomePage />) 
+        else if (opt == 2)
+            updatePage(<AboutMe />)
+        else if (opt == 3)
+            updatePage(<AboutProject />)
+
+    }
+
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/AboutMe" element={<AboutMe />} />
-                <Route path="/AboutProject" element={<AboutProject />} />
-            </Routes>
-        </Router>
+        <div>
+            <Header updatePage={updatePage}/>
+
+            {page}
+        </div>
     );
 }
 

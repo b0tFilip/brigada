@@ -1,7 +1,9 @@
 import React from "react";
 import "./header.css";
+import App from "../App";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-function Header() {
+
+function Header({updatePage}:any) {
     return (
         <div className="headerContainer">
             <img
@@ -14,13 +16,13 @@ function Header() {
                 <p className="pageName"> NOKIE </p>
             </div>
             <div className="linkContainer">
-                <a href="/" className="headerLink">
+                <button className="headerLink" onClick={updatePage(0)}>
                     Domů
-                </a>
-                <a href="/AboutMe" className="headerLink">
+                </button>
+                <a className="headerLink" onClick={updatePage(1)}>
                     O mně
                 </a>
-                <a href="/AboutProject" className="headerLink">
+                <a className="headerLink" onClick={updatePage(2)}>
                     {" "}
                     O projektu
                 </a>
