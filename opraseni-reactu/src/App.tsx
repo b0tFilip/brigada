@@ -9,12 +9,6 @@ import Header from "./components/header";
 function App() {
     const [Page, updatePage] = useState(<HomePage />);
 
-    function handleUpdatePage(opt: number) {
-        if (opt == 1) updatePage(<HomePage />);
-        else if (opt == 2) updatePage(<AboutMe />);
-        else if (opt == 3) updatePage(<AboutProject />);
-    }
-
     return (
         <div>
             <Header updatePage={updatePage} />

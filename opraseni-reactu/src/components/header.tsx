@@ -10,6 +10,7 @@ function Header(props: any) {
     const handleUpdate = (x: any) => {
         props.updatePage(x);
     };
+
     return (
         <div className="headerContainer">
             <img
@@ -31,7 +32,10 @@ function Header(props: any) {
                 <a className="headerLink" onClick={() => handleUpdate(<AboutMe />)}>
                     O mně
                 </a>
-                <a className="headerLink" onClick={() => handleUpdate(<AboutProject />)}>
+                <a
+                    className="headerLink"
+                    onClick={() => handleUpdate(<AboutProject />)}
+                >
                     {" "}
                     O projektu
                 </a>
