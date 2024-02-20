@@ -2,8 +2,14 @@ import React from "react";
 import "./header.css";
 import App from "../App";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/homePage";
+import AboutMe from "./pages/aboutMe";
+import AboutProject from "./pages/aboutProject";
 
-function Header({updatePage}:any) {
+function Header(props: any) {
+    const handleUpdate = (x: any) => {
+        props.updatePage(x);
+    };
     return (
         <div className="headerContainer">
             <img
@@ -16,13 +22,16 @@ function Header({updatePage}:any) {
                 <p className="pageName"> NOKIE </p>
             </div>
             <div className="linkContainer">
-                <button className="headerLink" onClick={updatePage(0)}>
+                <button
+                    className="headerLink"
+                    onClick={() => handleUpdate(<HomePage />)}
+                >
                     Domů
                 </button>
-                <a className="headerLink" onClick={updatePage(1)}>
+                <a className="headerLink" onClick={() => handleUpdate(<AboutMe />)}>
                     O mně
                 </a>
-                <a className="headerLink" onClick={updatePage(2)}>
+                <a className="headerLink" onClick={() => handleUpdate(<AboutProject />)}>
                     {" "}
                     O projektu
                 </a>

@@ -1,9 +1,7 @@
 import React from "react";
-import Header from "../header";
 function AboutProject() {
     return (
         <div>
-            <Header />
             <div className="mainFieldContainer">
                 <div className="mainField">
                     {" "}

@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "../header";
 import "./aboutMe.css";
 import Introduction from "../introduceYourself";
 
 function AboutMe() {
     return (
         <div>
-            <Header />
             <div className="mainFieldContainer">
                 <div className="mainField">
                     {" "}
