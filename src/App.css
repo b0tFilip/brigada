@@ -1,0 +1,20 @@
+:root {
+    --mainBg: rgb(45, 45, 45);
+    --darkBg: rgb(35, 35, 35);
+    --lightBg: rgb(65, 65, 65);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--mainBg);
+}
+
+.MB-container {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
