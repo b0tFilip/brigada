@@ -5,7 +5,7 @@ function DayList() {
     const n = 30;
     const count = Array.from({ length: n }, (_, index) => index + 1);
     const listOfDays = count.map((number: number, index: number) => (
-        <a href={"#Day" + (index + 1)} className="dayListing">
+        <a href={"#Day" + (index + 1)} className="dayListing" key={index}>
             {" "}
             Day {number.toString()}
         </a>

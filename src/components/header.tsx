@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./header.css";
 import App from "../App";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -6,11 +6,8 @@ import HomePage from "./pages/homePage";
 import AboutMe from "./pages/aboutMe";
 import AboutProject from "./pages/aboutProject";
 
-function Header(props: any) {
-    const handleUpdate = (x: any) => {
-        props.updatePage(x);
-    };
-
+function Header({ updatePage }: any) {
+    useEffect(()=>{console.log("Vyrenderoval jsem header")},[])
     return (
         <div className="headerContainer">
             <img
@@ -23,19 +20,13 @@ function Header(props: any) {
                 <p className="pageName"> NOKIE </p>
             </div>
             <div className="linkContainer">
-                <button
-                    className="headerLink"
-                    onClick={() => handleUpdate(<HomePage />)}
-                >
+                <button className="headerLink" onClick={() => updatePage("HomePage")}>
                     Domů
                 </button>
-                <a className="headerLink" onClick={() => handleUpdate(<AboutMe />)}>
+                <a className="headerLink" onClick={() => updatePage("AboutMe")}>
                     O mně
                 </a>
-                <a
-                    className="headerLink"
-                    onClick={() => handleUpdate(<AboutProject />)}
-                >
+                <a className="headerLink" onClick={() => updatePage("AboutProject")}>
                     {" "}
                     O projektu
                 </a>
